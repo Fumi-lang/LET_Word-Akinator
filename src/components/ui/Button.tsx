@@ -10,10 +10,9 @@ type Props = ComponentProps<typeof motion.button> & {
 };
 
 const VARIANT_CLASSES: Record<NonNullable<Props["variant"]>, string> = {
-  primary:
-    "bg-gradient-to-r from-pink-500 to-orange-400 text-white shadow-lg shadow-pink-950/40",
+  primary: "bg-[#D97757] text-white shadow-lg shadow-[#D97757]/30",
   secondary:
-    "bg-white/10 text-white border border-white/25 backdrop-blur-sm",
+    "bg-[#3D3929]/5 text-[#3D3929] border border-[#3D3929]/15 backdrop-blur-sm",
 };
 
 export function Button({

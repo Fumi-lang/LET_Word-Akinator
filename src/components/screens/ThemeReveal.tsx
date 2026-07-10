@@ -80,20 +80,20 @@ export default function ThemeReveal({
   };
 
   return (
-    <div className="flex flex-col gap-5 rounded-3xl border border-white/10 bg-white/5 p-6 shadow-2xl backdrop-blur-sm">
+    <div className="flex flex-col gap-5 rounded-3xl border border-[#3D3929]/10 bg-white/70 p-6 shadow-xl backdrop-blur-sm">
       <div className="text-center">
-        <p className="text-xs uppercase tracking-widest text-white/50">
+        <p className="text-xs uppercase tracking-widest text-stone-400">
           Theme Lottery
         </p>
-        <p className="mt-0.5 text-sm font-semibold text-white/90">
+        <p className="mt-0.5 text-sm font-semibold text-[#3D3929]">
           テーマ抽選
         </p>
       </div>
 
-      <div className="relative h-[276px] w-full overflow-hidden rounded-2xl border border-white/10 bg-black/30">
-        <div className="pointer-events-none absolute inset-x-0 top-0 z-10 h-16 bg-gradient-to-b from-black/70 to-transparent" />
-        <div className="pointer-events-none absolute inset-x-0 bottom-0 z-10 h-16 bg-gradient-to-t from-black/70 to-transparent" />
-        <div className="pointer-events-none absolute inset-x-4 top-1/2 z-10 h-[92px] -translate-y-1/2 rounded-xl border-2 border-fuchsia-400/60" />
+      <div className="relative h-[276px] w-full overflow-hidden rounded-2xl border border-[#3D3929]/10 bg-[#2A241C]">
+        <div className="pointer-events-none absolute inset-x-0 top-0 z-10 h-16 bg-gradient-to-b from-[#2A241C] to-transparent" />
+        <div className="pointer-events-none absolute inset-x-0 bottom-0 z-10 h-16 bg-gradient-to-t from-[#2A241C] to-transparent" />
+        <div className="pointer-events-none absolute inset-x-4 top-1/2 z-10 h-[92px] -translate-y-1/2 rounded-xl border-2 border-[#D97757]/70" />
 
         <motion.div
           className="absolute inset-x-0 top-1/2"
@@ -114,7 +114,7 @@ export default function ThemeReveal({
                 <span className="text-2xl font-extrabold text-white">
                   {theme.ja}
                 </span>
-                <span className="text-xs text-fuchsia-200/70">{theme.en}</span>
+                <span className="text-xs text-[#F0E9DD]/70">{theme.en}</span>
               </div>
             );
           })}
@@ -125,12 +125,12 @@ export default function ThemeReveal({
         {!spinning && winner && (
           <div
             key={winner.id}
-            className="animate-pop-in rounded-2xl border border-fuchsia-400/30 bg-fuchsia-500/15 px-3 py-4 text-center"
+            className="animate-pop-in rounded-2xl border border-[#D97757]/30 bg-[#D97757]/10 px-3 py-4 text-center"
           >
-            <p className="text-sm text-white/70">
+            <p className="text-sm text-[#3D3929]/80">
               このテーマをもとに単語を一つ考えてください。
             </p>
-            <p className="text-xs text-fuchsia-200/50">
+            <p className="text-xs text-stone-500">
               Think of one word based on this theme.
             </p>
           </div>
